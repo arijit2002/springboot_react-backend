@@ -28,7 +28,6 @@ public class User {
 		
 	}
 	
-	
 	public User(String firstname, String lastname, String email) {
 		super();
 		this.firstname = firstname;
