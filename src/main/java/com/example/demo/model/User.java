@@ -16,10 +16,10 @@ public class User {
 	private long id;
 	
 	@Column(name = "first_name")
-	private String firstname;
+	private String firstName;
 	
 	@Column(name = "last_name")
-	private String lastname;
+	private String lastName;
 	
 	@Column(name = "email")
 	private String email;
@@ -28,10 +28,10 @@ public class User {
 		
 	}
 	
-	public User(String firstname, String lastname, String email) {
+	public User(String firstName, String lastName, String email) {
 		super();
-		this.firstname = firstname;
-		this.lastname = lastname;
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.email = email;
 	}
 	public long getId() {
@@ -41,16 +41,16 @@ public class User {
 		this.id = id;
 	}
 	public String getFirstname() {
-		return firstname;
+		return firstName;
 	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstname(String firstName) {
+		this.firstName = firstName;
 	}
 	public String getLastname() {
-		return lastname;
+		return lastName;
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setLastname(String lastName) {
+		this.lastName = lastName;
 	}
 	public String getEmail() {
 		return email;
@@ -58,6 +58,5 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
 	
 }
